@@ -3,7 +3,32 @@
 Helps to create Grafana dashboards for our microservices.
 
 ```shell
-npm install --global 
+# Install
+
+$ npm i -g https://github.com/davidjohnmaccallum/log-dash
+
+# Use
+
+$ log-dash
+log-dash <command>
+
+Commands:
+  log-dash create  Create a Grafana dashboard for a microservice.
+
+Options:
+  --version  Show version number                                       [boolean]
+  --help     Show help                                                 [boolean]
+
+Please choose a command
+$ log-dash create
+? Microservice repository name log-david-svc
+? Dashboard description This is David's service
+? Dashboard sections to include Upstreams, Database
+Dashbaoard JSON written to log-david-svc-dashboard.json
+
+# Update 
+
+$ npm up log-dash
 ```
 
 ## Dashboard Layout
