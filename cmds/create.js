@@ -64,6 +64,13 @@ async function main() {
     const outFileName = `${answers.repoName}-dashboard.json`
     fs.writeFileSync(outFileName, JSON.stringify(dashboard, null, 4))
     console.log(`Dashbaoard JSON written to ${outFileName}`)
+    console.log(`Instructions:`)
+    console.log(`  1. Open up Grafana (https://grafanalot.pre-prod.stagealot.com, https://grafanalot.takealot.com/)`)
+    console.log(`  2. Open any dashboard`)
+    console.log(`  3. Open the dashboard settings`)
+    console.log(`  4. Open JSON Model`)
+    console.log(`  5. Paste in the contents of ${outFileName}`)
+    console.log(`  5. Press Save changes. This might seem a bit weird but this actually creates a new dashboard. It will not affect the dashboard whose settings you are on.`)
 
   } catch(err) {
     console.error(err)
