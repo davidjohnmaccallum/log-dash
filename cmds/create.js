@@ -70,7 +70,8 @@ async function main() {
     console.log(`  3. Open the dashboard settings`)
     console.log(`  4. Open JSON Model`)
     console.log(`  5. Paste in the contents of ${outFileName}`)
-    console.log(`  5. Press Save changes. This might seem a bit weird but this actually creates a new dashboard. It will not affect the dashboard whose settings you are on.`)
+    console.log(`  6. Press Save changes. This might seem a bit weird but this actually creates a new dashboard. It will not affect the dashboard whose settings you are on.`)
+    console.log(`  7. Open your new dashboard here https://grafanalot.pre-prod.stagealot.com/d/${answers.repoName}/${answers.repoName} or https://grafanalot.takealot.com/d/${answers.repoName}/${answers.repoName}`)
 
   } catch(err) {
     console.error(err)
